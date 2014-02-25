@@ -8,8 +8,11 @@
 
 .point_copy {
   width: 440px;
-  h3 {
+  h2 {
     margin: 20px 0 30px 0;
+  }
+  p {
+    font-size: 25px;
   }
 }
 
@@ -24,27 +27,34 @@ h3 {
     line-height: 1.5;
 }
 
+$point_size: 400px;
+
 #one {
-  background: url(image_path("1-background.png")) no-repeat bottom left;
-  height: 320px;
+  background: url(image_path("1-iphoneonly.png")) no-repeat bottom left;
+  height: $point_size;
   width: 936px;
+  background-position: 70%;
 }
 
 #two {
-  background: url(image_path("2-background.png")) no-repeat bottom left;
-  height: 320px;
+  background: url(image_path("2-hubandsensor.png")) no-repeat bottom left;
+  height: $point_size;
 }
 
 #three {
-  background: url(image_path("3-background.png")) no-repeat bottom left;
-  height: 320px;
+  background: url(image_path("1-iphoneonly.png")) no-repeat bottom left;
+  height: $point_size;
 }
 
 #four {
-  background: url(image_path("4-background.png")) no-repeat bottom left;
-  height: 320px;
+  background: url(image_path("1-background.png")) no-repeat bottom left;
+  height: $point_size;
 }
 
 .right {
   margin-left: 500px;
+}
+
+.seemore-who {
+  font-size: 20px;
 }

@@ -8,21 +8,32 @@
     padding-top: 60px;
   }
   #section-1 {
-    background: url(asset-path("", "images")) no-repeat center top;
+    background: url(asset-path("lock.png", "images")) no-repeat center top;
   }
   #section-2 {
-    background: url(asset-path("", "images")) no-repeat center top;
+    background: url(asset-path("lock.png", "images")) no-repeat center top;
     margin-right: 0px;
   }
   #section-3 {
-    background: url(asset-path("", "images")) no-repeat center top;
+    background: url(asset-path("lock.png", "images")) no-repeat center top;
   }
   #section-4 {
-    background: url(asset-path("", "images")) no-repeat center top;
+    background: url(asset-path("lock.png", "images")) no-repeat center top;
     margin-right: 0px;
   }
-  h4 {
+  #section-5 {
+    background: url(asset-path("lock.png", "images")) no-repeat center top;
+  }
+  #section-6 {
+    background: url(asset-path("lock.png", "images")) no-repeat center top;
+    margin-right: 0px;
+  }
+  h3 {
+    margin-top: 50px;
     width: 400px;
     text-align: center;
+  }
+  p {
+    font-size: 20px;
   }
 }
