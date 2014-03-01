@@ -4,6 +4,45 @@
 		width: 100%;
 	}
 
+	.separator {
+		height: 100px;
+	}
+
+	.who {
+		height: 500px;
+		margin-left: 1.5%;
+		margin-right: 1.5%;
+	}
+
+	.who-img > img {
+		width: 260px;
+		height: 350px;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.who-title {
+		margin: 10px;
+		font-size: 16px;
+		text-align: center;
+	}
+
+	.center {
+		text-align: center;
+	}
+
+	.who-content {
+		border: solid black 1px;
+		width: 33%;
+		display: inline-block;
+	}
+
+	.who-desc {
+		font-size: 16px;
+		text-align: center;
+		margin: 10px;
+	}
+
 </style>
 <body>
 <%= render 'layouts/header' %>
@@ -12,6 +51,53 @@
 </div> -->
 <div id="ourteam"></div>
 <div id="crowdfunding"></div>
+
+<div id="who">
+	<div class="page-header">
+		<h1 class="center">Home Security For Everyone
+			<br>
+			<small>
+				Is Genius right for you? Of course. It was designed with renters, homeowners, and small businesses in mind
+			</small>
+		</h1>
+	</div>
+
+	<div class="who">
+		<div id="rental" class="who-content third">
+			<div class="who-title">
+				<span>Rental</span>
+			</div>
+			<div class="who-img">
+				<img src="/assets/rental.png">
+			</div>
+			<div class="who-desc">
+				<p>Finally, home security for renters</p>
+			</div>
+		</div>
+		<div id="home" class="who-content third">
+			<div class="who-title">
+				<span>Home</span>
+			</div>
+			<div class="who-img">
+				<img src="/assets/home.png">
+			</div>
+			<div class="who-desc">
+				<p>Own a home, own your security</p>
+			</div>
+		</div>
+		<div id="office" class="who-content third">
+			<div class="who-title">
+				<span>Office</span>
+			</div>
+			<div class="who-img">
+				<img src="/assets/office.png">
+			</div>
+			<div class="who-desc">
+				<p>Secure your practice</p>
+			</div>
+		</div>
+	</div>
+</div>
 <div id="support"></div>
 <div id="product"></div>
 <div id="faqs">

@@ -55,6 +55,14 @@
 	.preorder > * {
 		font-size: 20px;
 	}
+	#nav-logo {
+		float: left;
+	}
+	.nav img {
+		width: 90px;
+		height: 40px;
+		position: fixed;
+	}
 </style>
 <script>
 	$(document).scroll(function() {
@@ -62,17 +70,20 @@
 		if(scrollPos > 170) {
 			$('.nav').addClass('nav-f');
 			$('.logo').hide();
+			$('#nav-logo').show();
 		} else {
 			$('.logo').show();
 			$('.nav').removeClass('nav-f');
+			$('#nav-logo').hide();
 		}
 	});
 </script>
 <div class="header">
 	<div class="logo">
-		<a href="#"><img src="/assets/logo.png" /></a>
+		<a href="/"><img src="/assets/logo.png" /></a>
 	</div>
   	<div class="nav">
+  		<span id="nav-logo" style="display: none;"><a href="/"><img src="/assets/smallLogo.png" /></a></span>
 	  	<ul>
 	  		<li><a href="/docs/team">Our Team</a></li>
 	  		<li><a href="/docs/product">Product</a></li>
