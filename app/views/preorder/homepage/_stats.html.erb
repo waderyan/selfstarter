@@ -56,7 +56,9 @@
     
     <div id="reserve_container">
       <p id="ship_date"><%= Settings.ships %></p>
-      <a href="/preorder/checkout" class="btn btn-primary reserve"><%= Settings.call_to_action %></a>
+      <!-- <a href="/preorder/checkout" class="btn btn-primary reserve"><%= Settings.call_to_action %></a> -->
+      <button data-celery="genius" class="btn btn-primary reserve"><%= Settings.call_to_action %></button>
+
       <p id="price"><%= Settings.price_human %></p>
       <p><%= Settings.dont_give_them_a_reason_to_say_no %>
       <a href=\"\">See more...</a>

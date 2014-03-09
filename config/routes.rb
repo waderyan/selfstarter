@@ -7,4 +7,6 @@ Selfstarter::Application.routes.draw do
   match '/preorder/prefill'       => 'preorder#prefill', :via => [:get,:post]
   match '/preorder/postfill'      => 'preorder#postfill', :via => [:get,:post]
   match '/docs'                   => 'docs#index', :via => [:get]
+  match '/docs/faqs'              => 'docs#faqs', :via => [:get]
+
 end

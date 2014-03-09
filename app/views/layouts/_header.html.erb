@@ -62,28 +62,34 @@
 		width: 90px;
 		height: 40px;
 		position: fixed;
+		margin-top: -10px;
+		margin-left: 10px;
+	}
+	.h-spacer {
+		height: 60px;
 	}
 </style>
 <script>
-	$(document).scroll(function() {
-		var scrollPos = $(document).scrollTop();
-		if(scrollPos > 170) {
-			$('.nav').addClass('nav-f');
-			$('.logo').hide();
-			$('#nav-logo').show();
-		} else {
-			$('.logo').show();
-			$('.nav').removeClass('nav-f');
-			$('#nav-logo').hide();
-		}
-	});
+	// $(document).scroll(function() {
+	// 	var scrollPos = $(document).scrollTop();
+	// 	if(scrollPos >= 0) {
+	// 		$('.nav').addClass('nav-f');
+	// 		//$('.logo').hide();
+	// 		$('#nav-logo').show();
+	// 	} else {
+	// 		//$('.logo').show();
+	// 		$('.nav').removeClass('nav-f');
+	// 		$('#nav-logo').hide();
+	// 	}
+	// });
 </script>
+<script type="text/javascript" src="https://www.trycelery.com/js/celery.js"></script>
 <div class="header">
-	<div class="logo">
+<!-- 	<div class="logo">
 		<a href="/"><img src="/assets/logo.png" /></a>
-	</div>
-  	<div class="nav">
-  		<span id="nav-logo" style="display: none;"><a href="/"><img src="/assets/smallLogo.png" /></a></span>
+	</div> -->
+  	<div class="nav nav-f">
+  		<span id="nav-logo"><a href="/"><img src="/assets/smallLogo.png" /></a></span>
 	  	<ul>
 	  		<li><a href="/docs/team">Our Team</a></li>
 	  		<li><a href="/docs/product">Product</a></li>
@@ -93,6 +99,7 @@
   	</div>
   	<div class="preorder">
   		<a class="btn">Blog</a>
-  		<a class="btn btn-primary" href="">Preorder</a>
+  		<button data-celery="genius" class="btn btn-primary"><%= Settings.call_to_action %></button>
   	</div>
+  	<div class="h-spacer"></div>
 </div>

@@ -23,27 +23,101 @@
 
 	.who-title {
 		margin: 10px;
-		font-size: 16px;
+		font-size: 40px;
 		text-align: center;
+		cursor: pointer;
 	}
 
 	.center {
 		text-align: center;
 	}
 
-	.who-content {
-		border: solid black 1px;
-		width: 33%;
-		display: inline-block;
-	}
 
 	.who-desc {
 		font-size: 16px;
 		text-align: center;
-		margin: 10px;
+	}
+
+	.who-display {
+		width: 60%;
+	}
+
+	.who-more {
+
+	}
+
+	.who-display-more {
+		width: 66%;
+		display: inline-block;
 	}
 
 </style>
+<script>
+
+$(function() {
+
+	var rental = '' +
+		'<div class="who-splash">' + 
+			'<div class="who-img">' +
+				'<img src="/assets/rental.png">' + 
+			'</div>' +
+			'<div class="who-desc">' + 
+				'<p>Finally, home security for renters</p>' +
+			'</div>' +
+		'</div>';
+
+	var home = '' +
+		'<div class="who-splash">' +
+			'<div class="who-img">' +
+				'<img src="/assets/home.png">' +
+			'</div>' +
+			'<div class="who-desc">' +
+				'<p>Own a home, own your security</p>' +
+			'</div>' +
+		'</div>';
+
+	var office = '' +
+		'<div class="who-splash">' +
+			'<div class="who-img">' +
+				'<img src="/assets/office.png">' +
+			'</div>' +
+			'<div class="who-desc">' +
+				'<p>Secure your practice</p>' +
+			'</div>' +
+		'</div>';
+
+	var rentalMore = '' +
+		'<div class="who-more">' +
+			'<p> Rental More </p>' +
+		'</div>';
+	var homeMore = '' +
+		'<div class="who-more">' +
+			'<p> Home More </p>' +
+		'</div>';	
+	var officeMore = '' +
+		'<div class="who-more">' +
+			'<p> Office More </p>' +
+		'</div>';
+
+	$('#rental .who-splash').html(rental);
+	$('#home .who-splash').html(home);
+	$('#office .who-splash').html(office);
+
+	$('#rental').click(function() {
+		$('#home .who-splash').hide();
+		$('#office .who-splash').hide();
+	});
+
+	$('#home').click(function() {
+		
+	});
+
+	$('#office').click(function() {
+		
+	});
+});
+	
+</script>
 <body>
 <%= render 'layouts/header' %>
 <!-- <div>
@@ -63,41 +137,32 @@
 	</div>
 
 	<div class="who">
-		<div id="rental" class="who-content third">
-			<div class="who-title">
-				<span>Rental</span>
+		<div class="row">
+			<div id="rental" class="col-md-4">
+				<div class="who-title">
+					<span>Rental</span>
+				</div>
+				<div class="who-splash"></div>
 			</div>
-			<div class="who-img">
-				<img src="/assets/rental.png">
+			<div id="home" class="col-md-4">
+				<div class="who-title">
+					<span>Home</span>
+				</div>
+				<div class="who-splash"></div>
 			</div>
-			<div class="who-desc">
-				<p>Finally, home security for renters</p>
-			</div>
-		</div>
-		<div id="home" class="who-content third">
-			<div class="who-title">
-				<span>Home</span>
-			</div>
-			<div class="who-img">
-				<img src="/assets/home.png">
-			</div>
-			<div class="who-desc">
-				<p>Own a home, own your security</p>
+			<div id="office" class="col-md-4">
+				<div class="who-title">
+					<span>Office</span>
+				</div>
+				<div class="who-splash"></div>
 			</div>
 		</div>
-		<div id="office" class="who-content third">
-			<div class="who-title">
-				<span>Office</span>
-			</div>
-			<div class="who-img">
-				<img src="/assets/office.png">
-			</div>
-			<div class="who-desc">
-				<p>Secure your practice</p>
-			</div>
+		<div style="display: none;" class="row" id="who-display-more">
+
 		</div>
 	</div>
 </div>
+<div style="height: 1000px;"></div>
 <div id="support"></div>
 <div id="product"></div>
 <div id="faqs">
