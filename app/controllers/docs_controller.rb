@@ -6,4 +6,7 @@ class DocsController < ApplicationController
   def faqs
   end
 
+  def who
+  end
+
 end
