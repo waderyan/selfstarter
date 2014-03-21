@@ -9,4 +9,16 @@ class DocsController < ApplicationController
   def who
   end
 
+  def product
+  end
+
+  def support
+  end
+
+  def blog
+  end
+
+  def team
+  end
+
 end

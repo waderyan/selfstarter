@@ -9,5 +9,9 @@ Selfstarter::Application.routes.draw do
   match '/docs'                   => 'docs#index', :via => [:get]
   match '/docs/faqs'              => 'docs#faqs', :via => [:get]
   match '/docs/who'               => 'docs#who', :via => [:get]
+  match '/docs/product'           => 'docs#product', :via => [:get]
+  match '/docs/support'           => 'docs#support', :via => [:get]
+  match '/docs/blog'              => 'docs#blog', :via => [:get]
+  match '/docs/team'              => 'docs#team', :via => [:get]
 
 end
