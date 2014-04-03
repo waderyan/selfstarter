@@ -1,14 +1,12 @@
 <body>
 	<div class="preorder">
-  		<a class="btn" href="/docs/blog">Blog</a>
+  		<!-- <a class="btn" href="/docs/blog">Blog</a> -->
   		<button data-celery="genius" class="btn btn-primary"><%= Settings.call_to_action %></button>
   	</div>
 	<div class="logo">
 		<a href="/"><img src="/assets/logo.png" /></a>
 	</div>
-	<div class="video">
-	  <%= render 'preorder/homepage/stats' %>
-	</div>
+	<%= render 'preorder/homepage/show_dont_tell.html.erb' %>
 	<%= render 'preorder/homepage/key_points' %>
 	<%= render 'preorder/homepage/other_points' %>
 	<%= render 'preorder/homepage/middle_reserve' %>  
