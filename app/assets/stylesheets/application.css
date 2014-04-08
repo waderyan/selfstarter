@@ -12,42 +12,7 @@
  *= require reset
  *= require main
  *= require jquery.ui.all
- *= require bootstrap
- *= require bootstrap-theme
+ *= require vendor/bootstrap
+ *= require vendor/bootstrap-theme
+ *= require vendor/animate.css
  */
-.hidden 
-{
-  display: none;
-}
-.pull-left {
-    float: left;
-}
-.pull-right {
-    float: right;
-}
-.docs-content {
-	display: inline-block;
-}
-.docs-title {
-}
-.docs-menu {
-}
-.docs-main {
-	margin-top: 40px;
-	margin-left: 10%;
-	margin-right: 10%;
-}
-.docs-faqs li {
-	margin-bottom: 5%;
-}
-.h-offset {
-	padding-top: 40px;
-	margin-top: -40px;
-}
-div.line-break {
-	margin: 4% 0px;
-	border-top: 1px solid gray;
-}
-.main {
-	padding-top: 70px;
-}

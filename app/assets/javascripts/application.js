@@ -18,4 +18,9 @@
 //= require jquery.textchange
 //= require preorder
 //= require docs
+//= require vendor/froogaloop.min
+//= require vendor/bootstrap.min.js
+//= require vendor/jquery.fittext.js
+//= require vendor/jquery.lettering.js
+//= require vendor/jquery.textillate.js
 //= require_tree .
