@@ -13,10 +13,32 @@
 			</div>
 		</div>
 	</div>
+
 	<div class="row">
-		<p>
-			Includes product specifications. Picture of product with how it works. 
-		</p>
+		<div class="col-md-6">
+			<%= render 'docs/products/starter_desc' %>
+		</div>
+		<div class="col-md-1"></div>
+		<div class="col-md-4">
+			<div class="container">
+				<div class="row">
+					<img src="/assets/base_station_only.png" alt="starter package">
+				</div>
+				<div class="row">
+					<img src="/assets/sensor_only.png" alt="starter package">
+				</div>
+				<div class="row">
+					<img src="/assets/the_app.png" alt="starter package">
+				</div>
+			</div>
+		</div>
 	</div>
+
+	<div class="big_wrapper">
+	  <div class="wrapper center" id="middle_reserve">
+	    <h2><%= Settings.ships %></h2>
+	    <a href="/preorder/checkout" class="btn btn-primary reserve"><%= Settings.middle_reserve_text %></a>
+	  </div>
+	</div> 
 </div>
 </body>

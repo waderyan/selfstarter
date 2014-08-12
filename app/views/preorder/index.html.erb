@@ -1,5 +1,4 @@
 <body>
-
 	<style>
 		.small-logo {
 			position: fixed;
@@ -38,7 +37,6 @@
 			text-align: center;
 			font-size: 70px;
 			color: #6b6b6b;
-			font-family: proxima-nova; 
 			font-style: normal; 
 			font-weight: 100;
 		}
@@ -60,6 +58,21 @@
 		}
 		.expl em {
 			font-style: italic;
+		}
+		.inno-system {
+			background: url("assets/background/background-inno_system.jpg") center top;
+			background-size: cover;
+			height: 700px;
+		}
+		.inno-system-expl {
+			padding-top: 200px;
+		}
+		.inno-system-expl h1 {
+			text-align: center;
+			font-size: 50px;
+			font-family: proxima-nova; 
+			font-style: normal; 
+			font-weight: 100;
 		}
 		.feel-peace {
 			background: url("assets/background/Camping.jpg") center top;
@@ -96,7 +109,7 @@
 		}
 		.portable-expl {
 			padding-top: 450px;
-			padding-left: 800px;
+			padding-left: 700px;
 		}
 		.portable-expl h1 {
 			color: white;
@@ -219,7 +232,6 @@
 				</div><!-- /.modal -->
 			</div>
 		</div>	
-	</div>
 
 	<div id='logos'>
 	  <ul class="wrapper clearfix">
@@ -230,13 +242,19 @@
 	  </ul>
 	</div>
 
+	<!-- <div class="inno-system full-screen">
+		<div class="inno-system-expl row">
+			<h1>the world's most innovative security system</h1>
+		</div>
+	</div> -->
+
 	<div class="full-screen">
 		<div class="expl row">
-			<div class="col-md-3"></div>
-			<div class="col-md-3">
+			<div class="col-md-2"></div>
+			<div class="col-md-4">
 				<h1>the sensor</h1>
 				<br>
-				<p><em>The eyes of the operations.</em> When motion or smoke is detected, the sensor snaps a series of pictures, and sends the images to you.</p>
+				<p><em>The eyes of the operations.</em> When motion or smoke is detected, the sensor snaps a series of pictures, and sends the images to you. <a href="/docs/product">See more ...</a></p>
 			</div>
 			<div class="col-md-1"></div>
 			<div class="col-md-2">
@@ -321,7 +339,7 @@
 			<div class="col-md-4">
 				<h1>the base station</h1>
 				<br>
-				<p><em>The brains of the operations.</em> Plugs straight into your Internet and syncs with the sensors all around your home. When it receives images from your sensors, it forwards them immediately to your phone.</p>
+				<p><em>The brains of the operations.</em> Plugs straight into your Internet and syncs with the sensors all around your home. When it receives images from your sensors, it forwards them immediately to your phone. <a href="/docs/product">See more ... </a></p>
 				
 			</div>
 			<div class="col-md-2"></div>
@@ -340,7 +358,7 @@
 			<div class="col-md-3">
 				<h1>the app</h1>
 				<br>
-				<p><em>The command center of the operations.</em>  Arm and disarm the system directly from your phone. Receives images taken from your home's sensor instantly, empowering you to decide whether or not to call the police.</p>
+				<p><em>The command center of the operations.</em>  Arm and disarm the system directly from your phone. Receives images taken from your home's sensor instantly, empowering you to decide whether or not to call the police. <a href="/docs/product">See more ... </a></p>
 			</div>
 			<div class="col-md-1"></div>
 			<div class="col-md-2">
@@ -359,7 +377,7 @@
 	<div class="big_wrapper">
 	  <div class="wrapper center" id="middle_reserve">
 	    <h2><%= Settings.ships %></h2>
-	    <a href="/preorder/checkout" class="btn btn-primary reserve"><%= Settings.middle_reserve_text %></a>
+	    <button data-celery="genius" class="btn btn-primary reserve"><%= Settings.call_to_action %></button>
 	  </div>
 	</div> 
 
